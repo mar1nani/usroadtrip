@@ -96,7 +96,7 @@ export default function SettingsPage() {
         ) : (
           <>
             <div style={{ fontSize: 12, color: C.dim, marginBottom: 10 }}>
-              Connecte-toi avec ton email (Marouane ou Isabelle) pour accéder à tes propres notes, dépenses et vol. Sans connexion, l'app reste utilisable normalement en local.
+              Connecte-toi avec ton email pour accéder à tes notes, dépenses et vol personnels.
             </div>
             <form onSubmit={handleLogin} style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
               <input
