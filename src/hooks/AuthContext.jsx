@@ -1,11 +1,19 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import { getCurrentUser, onAuthStateChange, signInWithMagicLink, signOut } from "../services/supabase/auth";
+import {
+  getCurrentUser,
+  onAuthStateChange,
+  signInWithPassword,
+  signOut,
+  sendPasswordReset,
+  updatePassword,
+} from "../services/supabase/auth";
 import { syncAll } from "../services/supabaseSync";
 
 const AuthContext = createContext(null);
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
+  const [passwordRecovery, setPasswordRecovery] = useState(false);
 
   useEffect(() => {
     getCurrentUser().then((u) => {
@@ -13,9 +21,13 @@ export function AuthProvider({ children }) {
       if (u) syncAll();
     });
 
-    const unsubscribe = onAuthStateChange((u) => {
+    const unsubscribe = onAuthStateChange((u, event) => {
       setUser(u);
-      if (u) syncAll();
+      if (event === "PASSWORD_RECOVERY") {
+        setPasswordRecovery(true);
+      } else if (u) {
+        syncAll();
+      }
     });
 
     function handleOnline() {
@@ -29,8 +41,14 @@ export function AuthProvider({ children }) {
     };
   }, []);
 
+  function clearPasswordRecovery() {
+    setPasswordRecovery(false);
+  }
+
   return (
-    <AuthContext.Provider value={{ user, signInWithMagicLink, signOut }}>
+    <AuthContext.Provider
+      value={{ user, passwordRecovery, clearPasswordRecovery, signInWithPassword, signOut, sendPasswordReset, updatePassword }}
+    >
       {children}
     </AuthContext.Provider>
   );

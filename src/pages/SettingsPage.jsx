@@ -16,8 +16,12 @@ export default function SettingsPage() {
   const [rateDraft, setRateDraft] = useState("");
   const [timeDraft, setTimeDraft] = useState("");
   const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [authStatus, setAuthStatus] = useState("");
-  const { user, signInWithMagicLink, signOut } = useAuth();
+  const [resetStatus, setResetStatus] = useState("");
+  const [newPassword, setNewPassword] = useState("");
+  const [pwStatus, setPwStatus] = useState("");
+  const { user, passwordRecovery, clearPasswordRecovery, signInWithPassword, signOut, sendPasswordReset, updatePassword } = useAuth();
   const { role, canSeeSettings } = usePermissions();
 
   useEffect(() => {
@@ -61,14 +65,48 @@ export default function SettingsPage() {
 
   async function handleLogin(e) {
     e.preventDefault();
-    if (!email.trim()) return;
+    if (!email.trim() || !password) return;
     setAuthStatus("sending");
     try {
-      await signInWithMagicLink(email.trim());
-      setAuthStatus("sent");
+      await signInWithPassword(email.trim(), password);
+      setPassword("");
+      setAuthStatus("");
     } catch (err) {
-      console.warn("Échec de l'envoi du lien de connexion :", err);
+      console.warn("Échec de la connexion :", err);
       setAuthStatus("error");
+    }
+  }
+
+  async function handleForgotPassword() {
+    if (!email.trim()) {
+      setResetStatus("need-email");
+      return;
+    }
+    setResetStatus("sending");
+    try {
+      await sendPasswordReset(email.trim());
+      setResetStatus("sent");
+    } catch (err) {
+      console.warn("Échec de l'envoi de l'email de réinitialisation :", err);
+      setResetStatus("error");
+    }
+  }
+
+  async function handleSetPassword(e) {
+    e.preventDefault();
+    if (newPassword.length < 6) {
+      setPwStatus("too-short");
+      return;
+    }
+    setPwStatus("saving");
+    try {
+      await updatePassword(newPassword);
+      setNewPassword("");
+      setPwStatus("done");
+      clearPasswordRecovery();
+    } catch (err) {
+      console.warn("Échec de la mise à jour du mot de passe :", err);
+      setPwStatus("error");
     }
   }
 
@@ -81,42 +119,110 @@ export default function SettingsPage() {
         <div style={{ fontSize: 12, color: C.dim, marginBottom: 10 }}>
           Rôle actuel : <span style={{ color: C.gold, fontWeight: 700 }}>{ROLE_LABELS[role]}</span>
         </div>
-        {user ? (
+        {user && !passwordRecovery ? (
           <>
             <div style={{ fontSize: 12, color: C.dim, marginBottom: 10 }}>
               Connecté en tant que <span style={{ color: C.cream }}>{user.email}</span>
             </div>
             <button
               onClick={signOut}
-              style={{ background: C.accent, border: `1px solid ${C.line}`, borderRadius: 9, padding: "9px 14px", color: C.cream, cursor: "pointer" }}
+              style={{ background: C.accent, border: `1px solid ${C.line}`, borderRadius: 9, padding: "9px 14px", color: C.cream, cursor: "pointer", marginBottom: 14 }}
             >
               Se déconnecter
             </button>
+
+            <div style={{ fontSize: 12, color: C.cream, fontWeight: 600, marginBottom: 8 }}>🔑 Changer mon mot de passe</div>
+            <form onSubmit={handleSetPassword} style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+              <input
+                type="password"
+                required
+                minLength={6}
+                value={newPassword}
+                onChange={(e) => setNewPassword(e.target.value)}
+                placeholder="Nouveau mot de passe"
+                style={{ flex: 1, minWidth: 160, background: "#0a1130", border: `1px solid ${C.line}`, borderRadius: 8, padding: "9px 11px", color: C.cream, fontSize: 14 }}
+              />
+              <button
+                type="submit"
+                disabled={pwStatus === "saving"}
+                style={{ background: C.accent, border: `1px solid ${C.line}`, borderRadius: 8, padding: "9px 16px", color: C.cream, fontWeight: 600, cursor: "pointer" }}
+              >
+                {pwStatus === "saving" ? "..." : "Mettre à jour"}
+              </button>
+            </form>
+            {pwStatus === "done" && <div style={{ fontSize: 12, color: "#3a8f5c", marginTop: 8 }}>✓ Mot de passe mis à jour.</div>}
+            {pwStatus === "too-short" && <div style={{ fontSize: 12, color: C.red, marginTop: 8 }}>6 caractères minimum.</div>}
+            {pwStatus === "error" && <div style={{ fontSize: 12, color: C.red, marginTop: 8 }}>Erreur — réessaie.</div>}
+          </>
+        ) : passwordRecovery ? (
+          <>
+            <div style={{ fontSize: 12, color: C.dim, marginBottom: 10 }}>
+              Définis ton mot de passe pour te connecter directement la prochaine fois.
+            </div>
+            <form onSubmit={handleSetPassword} style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+              <input
+                type="password"
+                required
+                minLength={6}
+                value={newPassword}
+                onChange={(e) => setNewPassword(e.target.value)}
+                placeholder="Ton mot de passe"
+                style={{ flex: 1, minWidth: 160, background: "#0a1130", border: `1px solid ${C.line}`, borderRadius: 8, padding: "9px 11px", color: C.cream, fontSize: 14 }}
+              />
+              <button
+                type="submit"
+                disabled={pwStatus === "saving"}
+                style={{ background: `linear-gradient(135deg,${C.gold},#9a7420)`, border: "none", borderRadius: 8, padding: "9px 16px", color: "#1a1200", fontWeight: 700, cursor: "pointer" }}
+              >
+                {pwStatus === "saving" ? "..." : "Définir"}
+              </button>
+            </form>
+            {pwStatus === "done" && <div style={{ fontSize: 12, color: "#3a8f5c", marginTop: 8 }}>✓ Mot de passe défini — tu es connecté.</div>}
+            {pwStatus === "too-short" && <div style={{ fontSize: 12, color: C.red, marginTop: 8 }}>6 caractères minimum.</div>}
+            {pwStatus === "error" && <div style={{ fontSize: 12, color: C.red, marginTop: 8 }}>Erreur — réessaie.</div>}
           </>
         ) : (
           <>
             <div style={{ fontSize: 12, color: C.dim, marginBottom: 10 }}>
-              Connecte-toi avec ton email pour accéder à tes notes, dépenses et vol personnels.
+              Connecte-toi avec ton email et ton mot de passe pour accéder à tes notes, dépenses et vol personnels.
             </div>
-            <form onSubmit={handleLogin} style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+            <form onSubmit={handleLogin} style={{ display: "grid", gap: 8 }}>
               <input
                 type="email"
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="ton@email.com"
-                style={{ flex: 1, minWidth: 160, background: "#0a1130", border: `1px solid ${C.line}`, borderRadius: 8, padding: "9px 11px", color: C.cream, fontSize: 14 }}
+                style={{ background: "#0a1130", border: `1px solid ${C.line}`, borderRadius: 8, padding: "9px 11px", color: C.cream, fontSize: 14 }}
+              />
+              <input
+                type="password"
+                required
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="Mot de passe"
+                style={{ background: "#0a1130", border: `1px solid ${C.line}`, borderRadius: 8, padding: "9px 11px", color: C.cream, fontSize: 14 }}
               />
               <button
                 type="submit"
                 disabled={authStatus === "sending"}
                 style={{ background: `linear-gradient(135deg,${C.gold},#9a7420)`, border: "none", borderRadius: 8, padding: "9px 16px", color: "#1a1200", fontWeight: 700, cursor: "pointer" }}
               >
-                {authStatus === "sending" ? "Envoi..." : "Lien de connexion"}
+                Se connecter
               </button>
             </form>
-            {authStatus === "sent" && <div style={{ fontSize: 12, color: "#3a8f5c", marginTop: 8 }}>✓ Lien envoyé — vérifie ta boîte mail.</div>}
-            {authStatus === "error" && <div style={{ fontSize: 12, color: C.red, marginTop: 8 }}>Erreur — Supabase est-il configuré ?</div>}
+            {authStatus === "error" && <div style={{ fontSize: 12, color: C.red, marginTop: 8 }}>Email ou mot de passe incorrect.</div>}
+
+            <button
+              type="button"
+              onClick={handleForgotPassword}
+              style={{ background: "none", border: "none", color: C.gold, fontSize: 11.5, marginTop: 10, cursor: "pointer", textDecoration: "underline", padding: 0 }}
+            >
+              Mot de passe oublié / pas encore défini ?
+            </button>
+            {resetStatus === "need-email" && <div style={{ fontSize: 12, color: C.red, marginTop: 6 }}>Renseigne d'abord ton email ci-dessus.</div>}
+            {resetStatus === "sent" && <div style={{ fontSize: 12, color: "#3a8f5c", marginTop: 6 }}>✓ Email envoyé — clique le lien pour définir ton mot de passe.</div>}
+            {resetStatus === "error" && <div style={{ fontSize: 12, color: C.red, marginTop: 6 }}>Erreur — Supabase est-il configuré ?</div>}
           </>
         )}
       </Card>
