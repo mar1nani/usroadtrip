@@ -1,0 +1,861 @@
+[
+  {
+    "n": 1,
+    "date": "Fri Aug 22",
+    "from": "Chicago, IL",
+    "to": "St. Louis, MO",
+    "miles": 300,
+    "drive": "5h",
+    "tag": "Route 66 begins",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/0/00/St_Louis_night_expblend_cropped.jpg",
+    "stops": [
+      "Route 66 Begin Sign – E Adams & S Michigan Ave, Chicago",
+      "Gemini Giant muffler man in Wilmington (quick photo)",
+      "Chain of Rocks Bridge – old Rt66 Mississippi crossing",
+      "Gateway Arch St. Louis – tram ride $16 if you arrive early enough"
+    ],
+    "wildlife": null,
+    "movies": null,
+    "dark": null,
+    "pray": {
+      "fajr": "~5:10",
+      "dhuhr": "1:05",
+      "asr": "4:45",
+      "maghrib": "7:35",
+      "isha": "9:00",
+      "zone": "St. Louis (Central)"
+    },
+    "sleep": {
+      "spot": "Cahokia Mounds State Park lot (East St. Louis side)",
+      "type": "State park – FREE",
+      "notes": "Quiet, safe, overnight historically tolerated. Or Hollywood Casino lot, St. Louis."
+    },
+    "groceries": "Schnucks on Hampton Ave, St. Louis",
+    "fuel": "~$33",
+    "warn": "⚠️ Skipping Springfield — long first day. Leave Chicago by 8am to enjoy stops along the way."
+  },
+  {
+    "n": 2,
+    "date": "Sat Aug 23",
+    "from": "St. Louis, MO",
+    "to": "Oklahoma City, OK",
+    "miles": 500,
+    "drive": "7h",
+    "tag": "Route 66 heartland",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Oklahoma_city_downtown.JPG",
+    "stops": [
+      "Meramec Caverns near Stanton – cave tour $26",
+      "Cuba MO murals – 30 min walk on Rt 66 main street",
+      "Blue Whale of Catoosa OK – free Route 66 icon",
+      "Pops 66 Soda Ranch Arcadia – giant glowing bottle, 700 sodas"
+    ],
+    "wildlife": null,
+    "movies": null,
+    "dark": null,
+    "pray": {
+      "fajr": "~5:25",
+      "dhuhr": "1:20",
+      "asr": "5:00",
+      "maghrib": "7:50",
+      "isha": "9:10",
+      "zone": "Oklahoma City (Central)"
+    },
+    "sleep": {
+      "spot": "Riverwind Casino or Chickasaw NRA lot, south of OKC",
+      "type": "Casino / NRA – FREE",
+      "notes": "Oklahoma casinos very car-camper friendly. Chickasaw NRA is free federal land."
+    },
+    "groceries": "Walmart Supercenter, Lebanon MO (midway)",
+    "fuel": "~$55",
+    "warn": "⚠️ Longest driving day of the trip. Leave St. Louis by 7am. Worth it to set up the West."
+  },
+  {
+    "n": 3,
+    "date": "Sun Aug 24",
+    "from": "Oklahoma City, OK",
+    "to": "Amarillo, TX",
+    "miles": 260,
+    "drive": "4h",
+    "tag": "Cowboy country + Route 66",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/9/95/Cadillac_Ranch.jpg",
+    "stops": [
+      "National Cowboy & Western Heritage Museum OKC – $15, world-class Western art & history (your kind of place)",
+      "Route 66 Museum Clinton OK – $5, best on the Mother Road",
+      "U-Drop Inn Shamrock TX – Art Deco icon, free photo",
+      "Cadillac Ranch Amarillo – FREE, 24/7, bring spray paint"
+    ],
+    "wildlife": null,
+    "movies": null,
+    "dark": "Good – Chickasaw NRA, away from city",
+    "pray": {
+      "fajr": "~5:35",
+      "dhuhr": "1:35",
+      "asr": "5:10",
+      "maghrib": "8:05",
+      "isha": "9:25",
+      "zone": "Amarillo (Central)"
+    },
+    "sleep": {
+      "spot": "Palo Duro Canyon State Park campground ($20)",
+      "type": "State Park – $20",
+      "notes": "'Grand Canyon of Texas'. Canyon walls glow red at sunset. Wake up inside the canyon."
+    },
+    "groceries": "United Supermarkets, Amarillo",
+    "fuel": "~$29",
+    "warn": null
+  },
+  {
+    "n": 4,
+    "date": "Mon Aug 25",
+    "from": "Amarillo, TX",
+    "to": "Moab, UT (via Santa Fe)",
+    "miles": 475,
+    "drive": "7h",
+    "tag": "Old West → red rock",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Delicate_arch_sunset.jpg",
+    "stops": [
+      "Adrian TX Midpoint Café – exact midpoint Chicago↔LA (early stop)",
+      "Santa Fe Plaza – quick 2h stop: oldest capital in USA, adobe Old West architecture, lunch",
+      "Drive north into Utah's red rock country",
+      "Arrive Moab evening – gateway to Arches & Canyonlands"
+    ],
+    "wildlife": null,
+    "movies": null,
+    "dark": "⭐ Excellent – Moab BLM, red-rock dark skies",
+    "pray": {
+      "fajr": "~5:30",
+      "dhuhr": "12:55",
+      "asr": "4:30",
+      "maghrib": "7:25",
+      "isha": "8:45",
+      "zone": "Moab (Mountain)"
+    },
+    "sleep": {
+      "spot": "BLM dispersed along Hwy 128 (Colorado River) or Willow Springs Rd, Moab",
+      "type": "BLM – FREE dispersed",
+      "notes": "Free camping right by the red cliffs along the river. Willow Springs Rd is the classic free Moab spot."
+    },
+    "groceries": "City Market, Moab (stock up here)",
+    "fuel": "~$52",
+    "warn": "⚠️ Longer day — Santa Fe is now a quick 2h stop, not an overnight. Leave Amarillo by 7am. Worth it for Moab."
+  },
+  {
+    "n": 5,
+    "date": "Tue Aug 26",
+    "from": "Moab, UT",
+    "to": "Monument Valley, UT/AZ",
+    "miles": 155,
+    "drive": "2.5h + Arches morning",
+    "tag": "🎬 Arches → Western landscape",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/7/78/Monument_Valley%2C_Utah%2C_USA_%2823611451292%29.jpg",
+    "stops": [
+      "Arches NP morning – ATB covers entry: Delicate Arch (the big ring arch ⭐), Windows, Balanced Rock",
+      "Hwy 128 Colorado River Scenic Byway – the road beside the giant orange canyon walls 🧡",
+      "Drive south through Navajo Nation red-mesa country",
+      "Forrest Gump Point + Monument Valley Tribal Park ($8) – Valley Drive 17-mi loop"
+    ],
+    "wildlife": [
+      "Arches/Canyonlands – desert bighorn sheep, jackrabbits, ravens",
+      "Navajo Nation desert – coyotes, hawks",
+      "Wild horses occasionally roam the mesas"
+    ],
+    "movies": [
+      "🎬 Arches & Moab – Indiana Jones and the Last Crusade (opening), Thelma & Louise, 127 Hours, Mission Impossible 2",
+      "🎬 Monument Valley – Stagecoach, The Searchers, Forrest Gump (the run), Back to the Future III",
+      "🎬 Forrest Gump Point on Hwy 163 – the exact spot he stops running"
+    ],
+    "dark": "⭐ WORLD-CLASS – Monument Valley / Mexican Hat, almost zero light pollution",
+    "pray": {
+      "fajr": "~5:35",
+      "dhuhr": "1:00",
+      "asr": "4:35",
+      "maghrib": "7:30",
+      "isha": "8:50",
+      "zone": "Monument Valley (Mountain)"
+    },
+    "sleep": {
+      "spot": "Goulding's Campground ($30) or BLM near Mexican Hat, UT (FREE)",
+      "type": "Campground $30 / BLM FREE",
+      "notes": "Goulding's has the classic Monument Valley view. BLM near Mexican Hat is free, 20 min north."
+    },
+    "groceries": "Stocked in Moab — very limited shops in Navajo Nation",
+    "fuel": "~$17",
+    "warn": "⚠️ Do Arches early (gates can require timed entry in peak season — check nps.gov). Then drive south. Delicate Arch hike is 3mi round trip, go before the heat."
+  },
+  {
+    "n": 6,
+    "date": "Wed Aug 27",
+    "from": "Monument Valley",
+    "to": "Grand Canyon South Rim, AZ",
+    "miles": 180,
+    "drive": "3h",
+    "tag": "🏜️ Grand Canyon",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/3/31/Canyon_River_Tree_%28165872763%29.jpeg",
+    "stops": [
+      "Monument Valley sunrise – buttes glowing orange at dawn (don't miss)",
+      "Desert View Watchtower – first Grand Canyon view from the east, most dramatic",
+      "Grand Canyon South Rim – Mather Point, Yavapai Point, rim trail walk",
+      "Hopi Point sunset – best sunset spot on the rim"
+    ],
+    "wildlife": [
+      "California condors soaring along the rim (rare, huge wingspan)",
+      "Elk and mule deer in the village area",
+      "Rock squirrels, ravens"
+    ],
+    "movies": [
+      "🎬 Grand Canyon – Thelma & Louise (climactic ending filmed near here), National Lampoon's Vacation"
+    ],
+    "dark": "⭐ Excellent – Kaibab NF, Grand Canyon dark-sky park",
+    "pray": {
+      "fajr": "~5:30",
+      "dhuhr": "12:25",
+      "asr": "4:00",
+      "maghrib": "6:55",
+      "isha": "8:15",
+      "zone": "Grand Canyon (Arizona/MST)"
+    },
+    "sleep": {
+      "spot": "Kaibab National Forest dispersed (just south of park entrance)",
+      "type": "National Forest – FREE",
+      "notes": "Free dispersed camping right outside the park. Very popular, arrive by late afternoon."
+    },
+    "groceries": "Stock up at Tuba City or in the park village store",
+    "fuel": "~$20",
+    "warn": null
+  },
+  {
+    "n": 7,
+    "date": "Thu Aug 28",
+    "from": "Grand Canyon, AZ",
+    "to": "Las Vegas, NV",
+    "miles": 280,
+    "drive": "4.5h",
+    "tag": "Route 66 + Vegas",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Las_Vegas_Strip_09_2017_4897.jpg",
+    "stops": [
+      "Grand Canyon sunrise at Mather Point – arrive 30 min before",
+      "Route 66 in Seligman AZ – the town that inspired Pixar's Cars, pure nostalgia",
+      "Oatman AZ – wild burros roaming the street, ghost town (slight detour, very cowboy)",
+      "Las Vegas Strip at night – arrive after dark, top down 🎰"
+    ],
+    "wildlife": [
+      "Oatman AZ – wild burros walking the street (will approach for food)",
+      "Desert bighorn sheep in the Black Mountains"
+    ],
+    "movies": [
+      "🎬 Seligman AZ – the real town that inspired Radiator Springs in Pixar's Cars",
+      "🎬 Kingman/Oatman Route 66 – How the West Was Won, Easy Rider vibes"
+    ],
+    "dark": "Fair – BLM near Jean, some Vegas glow on horizon",
+    "pray": {
+      "fajr": "~5:00",
+      "dhuhr": "12:25",
+      "asr": "4:00",
+      "maghrib": "7:00",
+      "isha": "8:20",
+      "zone": "Las Vegas (Pacific)"
+    },
+    "sleep": {
+      "spot": "BLM land near Jean, NV (exit 12, I-15 south of Vegas)",
+      "type": "BLM – FREE dispersed",
+      "notes": "Classic Vegas car-camper spot, 20 min south of the Strip."
+    },
+    "groceries": "Smith's or WinCo, Las Vegas",
+    "fuel": "~$31",
+    "warn": null
+  },
+  {
+    "n": 8,
+    "date": "Fri Aug 29",
+    "from": "Las Vegas, NV",
+    "to": "Los Angeles, CA",
+    "miles": 270,
+    "drive": "4.5h",
+    "tag": "End of Route 66",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/3/36/Santa_monica_pier_entrance_evening.jpg",
+    "stops": [
+      "Seven Magic Mountains – colorful boulder art south of Vegas, free",
+      "Barstow CA – Route 66 Mother Road Museum, free",
+      "Santa Monica Pier – official END of Route 66 🏁 (you made the Mother Road!)",
+      "Venice Beach sunset"
+    ],
+    "wildlife": null,
+    "movies": [
+      "🎬 Santa Monica Pier – Forrest Gump, Iron Man, The Net",
+      "🎬 Seven Magic Mountains – music videos & car commercials"
+    ],
+    "dark": null,
+    "pray": {
+      "fajr": "~5:05",
+      "dhuhr": "12:30",
+      "asr": "4:05",
+      "maghrib": "7:05",
+      "isha": "8:25",
+      "zone": "Los Angeles (Pacific)"
+    },
+    "sleep": {
+      "spot": "Leo Carrillo State Beach campground, Malibu",
+      "type": "State Beach – $35",
+      "notes": "Sleep 50m from the Pacific. Reserve at reservecalifornia.com — fills fast in summer."
+    },
+    "groceries": "Ralphs on Lincoln Blvd, Santa Monica",
+    "fuel": "~$30",
+    "warn": null
+  },
+  {
+    "n": 9,
+    "date": "Sat Aug 30",
+    "from": "Los Angeles",
+    "to": "Los Angeles (Day 2)",
+    "miles": 50,
+    "drive": "City",
+    "tag": "🌴 LA day 1",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Griffith_observatory_2006.jpg",
+    "stops": [
+      "Griffith Observatory + Hollywood Sign view – free",
+      "Hollywood Walk of Fame + TCL Chinese Theatre",
+      "Getty Center – free entry, book timed slot at getty.edu",
+      "Beverly Hills + Rodeo Drive drive-through"
+    ],
+    "wildlife": null,
+    "movies": null,
+    "dark": null,
+    "pray": {
+      "fajr": "~5:10",
+      "dhuhr": "12:30",
+      "asr": "4:05",
+      "maghrib": "7:05",
+      "isha": "8:25",
+      "zone": "Los Angeles (Pacific)"
+    },
+    "sleep": {
+      "spot": "Leo Carrillo State Beach OR Malibu Creek SP",
+      "type": "State Park – $35",
+      "notes": "Stay coastal — best sleep near LA, away from city heat & noise."
+    },
+    "groceries": "Trader Joe's or Ralphs",
+    "fuel": "~$6",
+    "warn": null
+  },
+  {
+    "n": 10,
+    "date": "Sun Aug 31",
+    "from": "Los Angeles",
+    "to": "Los Angeles (Day 3)",
+    "miles": 50,
+    "drive": "City",
+    "tag": "🌴 LA day 2",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Ocean_Front_Walk%2C_Venice_LA.jpg",
+    "stops": [
+      "Universal Studios OR Santa Monica/Venice beach day",
+      "Downtown LA – The Last Bookstore, Grand Central Market",
+      "Malibu beaches – El Matador State Beach (most scenic)",
+      "Sunset at El Matador or Point Dume"
+    ],
+    "wildlife": null,
+    "movies": null,
+    "dark": null,
+    "pray": {
+      "fajr": "~5:10",
+      "dhuhr": "12:30",
+      "asr": "4:05",
+      "maghrib": "7:05",
+      "isha": "8:25",
+      "zone": "Los Angeles (Pacific)"
+    },
+    "sleep": {
+      "spot": "Leo Carrillo State Beach, Malibu",
+      "type": "State Beach – $35",
+      "notes": "Last coastal night before heading up PCH."
+    },
+    "groceries": "Whole Foods or Ralphs, Malibu",
+    "fuel": "~$6",
+    "warn": null
+  },
+  {
+    "n": 11,
+    "date": "Mon Sep 1",
+    "from": "Los Angeles, CA",
+    "to": "Big Sur, CA (PCH)",
+    "miles": 320,
+    "drive": "6h with stops",
+    "tag": "🌊 Pacific Coast Highway",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Bixby_Creek_Bridge%2C_California%2C_USA_-_May_2013.jpg",
+    "stops": [
+      "Malibu coast cruise – top down",
+      "Bixby Creek Bridge Big Sur – THE photo of PCH",
+      "McWay Falls – waterfall onto the beach, Big Sur",
+      "Elephant Seal Colony San Simeon – free, hundreds of seals"
+    ],
+    "wildlife": null,
+    "movies": null,
+    "dark": "Good – Big Sur coast, dark to the west over ocean",
+    "pray": {
+      "fajr": "~5:15",
+      "dhuhr": "1:00",
+      "asr": "4:35",
+      "maghrib": "7:35",
+      "isha": "8:55",
+      "zone": "Big Sur (Pacific)"
+    },
+    "sleep": {
+      "spot": "Kirk Creek Campground ($25) – on a cliff above the Pacific",
+      "type": "National Forest – $25",
+      "notes": "One of the best campsites in America — bluff 100ft above the ocean. Book weeks ahead at recreation.gov."
+    },
+    "groceries": "Grocery Outlet, San Luis Obispo",
+    "fuel": "~$35",
+    "warn": null
+  },
+  {
+    "n": 12,
+    "date": "Tue Sep 2",
+    "from": "Big Sur, CA",
+    "to": "San Francisco, CA",
+    "miles": 150,
+    "drive": "3h",
+    "tag": "🌉 San Francisco",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Golden_Gate_Bridge_as_seen_from_Battery_East.jpg",
+    "stops": [
+      "17-Mile Drive Pebble Beach – $12.25, stunning coast on the way up",
+      "Golden Gate Bridge – walk or drive across, photo from Battery Spencer (Marin side)",
+      "Chase Center – home of the Warriors 🏀 (photo / team store)",
+      "Painted Ladies at Alamo Square + Fisherman's Wharf / Pier 39 sea lions"
+    ],
+    "wildlife": [
+      "Pier 39 – wild California sea lions barking on the docks (free, year-round)",
+      "Año Nuevo / coast – harbor seals",
+      "Pelicans & cormorants along the bay"
+    ],
+    "movies": [
+      "🎬 Golden Gate Bridge – Vertigo, San Andreas, Ant-Man",
+      "🎬 Alcatraz – The Rock (1996)",
+      "🎬 Fisherman's Wharf area – The Princess Diaries"
+    ],
+    "dark": null,
+    "pray": {
+      "fajr": "~5:20",
+      "dhuhr": "1:05",
+      "asr": "4:40",
+      "maghrib": "7:40",
+      "isha": "9:00",
+      "zone": "San Francisco (Pacific)"
+    },
+    "sleep": {
+      "spot": "Rob Hill Campground (Presidio) OR Pacifica State Beach lot, south of SF",
+      "type": "Campground $35 / coastal lot",
+      "notes": "Rob Hill is the only campground in SF (Presidio, book ahead). Pacifica is 20 min south, ocean-side, easier for car sleeping."
+    },
+    "groceries": "Trader Joe's or Safeway, San Francisco",
+    "fuel": "~$17",
+    "warn": "⚠️ SF is tough for car sleeping in the city itself — sleep just south in Pacifica or at Presidio's Rob Hill campground."
+  },
+  {
+    "n": 13,
+    "date": "Wed Sep 3",
+    "from": "San Francisco, CA",
+    "to": "Yosemite Valley, CA",
+    "miles": 190,
+    "drive": "4h",
+    "tag": "🏔️ Yosemite (1 day)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/1/13/Tunnel_View%2C_Yosemite_Valley%2C_Yosemite_NP_-_Diliff.jpg",
+    "stops": [
+      "Early start from SF – inland via Hwy 120",
+      "Tunnel View – first Yosemite Valley panorama, iconic",
+      "Yosemite Valley loop – Half Dome, El Capitan, Yosemite Falls base trail",
+      "Glacier Point at sunset – 360° view, Half Dome alpenglow (drive up before dark)"
+    ],
+    "wildlife": [
+      "Mule deer in the meadows at dawn/dusk",
+      "Black bears (keep all food in bear lockers!)",
+      "Steller's jays, marmots near Glacier Point"
+    ],
+    "movies": [
+      "🎬 Tunnel View / valley – Star Trek V, Maverick",
+      "🎬 Yosemite vistas appear in countless Westerns & The Last of the Mohicans-style epics"
+    ],
+    "dark": null,
+    "pray": {
+      "fajr": "~5:20",
+      "dhuhr": "1:05",
+      "asr": "4:40",
+      "maghrib": "7:35",
+      "isha": "8:55",
+      "zone": "Yosemite (Pacific)"
+    },
+    "sleep": {
+      "spot": "Hodgdon Meadow Campground, Yosemite ($26)",
+      "type": "NPS Campground – $26",
+      "notes": "ATB Pass covers entry. Reserve campground at recreation.gov. One full day is enough for the Valley highlights + Glacier Point."
+    },
+    "groceries": "Stock up in Oakdale or Groveland before entering park",
+    "fuel": "~$21",
+    "warn": "⚠️ Yosemite day-use reservation required. Book at recreation.gov (7-day rolling window, 8am). Leave SF by 7am to maximize the day."
+  },
+  {
+    "n": 14,
+    "date": "Thu Sep 4",
+    "from": "Yosemite, CA",
+    "to": "Reno, NV (via Tioga Pass)",
+    "miles": 220,
+    "drive": "4h",
+    "tag": "⛰️ High Sierra",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Mono_Lake_aerial.jpg",
+    "stops": [
+      "Tunnel View sunrise before leaving – magic morning light",
+      "Tioga Pass Hwy 120 – highest paved road in the Sierra, alpine lakes",
+      "Mono Lake tufa towers – eerie limestone spires, free",
+      "Bodie State Historic Park – authentic gold-rush ghost town (very Old West)"
+    ],
+    "wildlife": [
+      "Mono Lake – millions of migratory birds (eared grebes, phalaropes) feeding on brine shrimp",
+      "Mule deer, coyotes along Hwy 395",
+      "Yellow-bellied marmots at Tioga Pass"
+    ],
+    "movies": [
+      "🎬 Bodie ghost town – backdrop feel of many Westerns",
+      "🎬 Mono Lake – High Plains Drifter (Clint Eastwood) filmed nearby; Pixar/Tim Burton visuals"
+    ],
+    "dark": "⭐ Excellent – Desert Creek BLM, Nevada Great Basin",
+    "pray": {
+      "fajr": "~5:15",
+      "dhuhr": "12:55",
+      "asr": "4:30",
+      "maghrib": "7:25",
+      "isha": "8:45",
+      "zone": "Reno (Pacific)"
+    },
+    "sleep": {
+      "spot": "Desert Creek BLM, Washoe Valley south of Reno",
+      "type": "BLM – FREE dispersed",
+      "notes": "Nevada is half public land. Dark skies, free, quiet."
+    },
+    "groceries": "Raley's or Walmart, Reno",
+    "fuel": "~$24",
+    "warn": null
+  },
+  {
+    "n": 15,
+    "date": "Fri Sep 5",
+    "from": "Reno, NV",
+    "to": "Twin Falls, ID",
+    "miles": 430,
+    "drive": "6h",
+    "tag": "Open road",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Sunset_at_Salt_Flats.jpg",
+    "stops": [
+      "Bonneville Salt Flats near Wendover UT – drive onto the white salt, surreal",
+      "Shoshone Falls Twin Falls – 'Niagara of the West', free",
+      "Perrine Bridge – 500ft canyon bridge walk, free"
+    ],
+    "wildlife": [
+      "Pronghorn antelope on the Nevada/Utah flats (fastest land animal in N. America)",
+      "Hawks & golden eagles on fence posts",
+      "Jackrabbits at dusk"
+    ],
+    "movies": [
+      "🎬 Bonneville Salt Flats – The World's Fastest Indian, Independence Day, pirates/car ads"
+    ],
+    "dark": "Excellent – Snake River Canyon BLM",
+    "pray": {
+      "fajr": "~5:20",
+      "dhuhr": "1:30",
+      "asr": "5:05",
+      "maghrib": "7:55",
+      "isha": "9:15",
+      "zone": "Twin Falls (Mountain)"
+    },
+    "sleep": {
+      "spot": "Snake River Canyon rim BLM land, Twin Falls",
+      "type": "BLM – FREE dispersed",
+      "notes": "Pull off Hwy 93 south of town. Dramatic canyon views."
+    },
+    "groceries": "Walmart, Twin Falls",
+    "fuel": "~$47",
+    "warn": "⚠️ Long day — break at Bonneville Salt Flats. Leave Reno by 7am."
+  },
+  {
+    "n": 16,
+    "date": "Sat Sep 6",
+    "from": "Twin Falls, ID",
+    "to": "Jackson Hole, WY",
+    "miles": 290,
+    "drive": "4.5h",
+    "tag": "🤠 Wyoming begins",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Barns_grand_tetons.jpg",
+    "stops": [
+      "Craters of the Moon NM – ATB covers entry, lava landscape",
+      "Mormon Row barns – most photographed barns in America, Teton backdrop",
+      "Grand Teton NP – Snake River Overlook (Ansel Adams shot)",
+      "Jackson town square – elk antler arches, cowboy bars"
+    ],
+    "wildlife": [
+      "Grand Teton – moose at Oxbow Bend, elk, bison",
+      "Pronghorn & mule deer along the highway",
+      "Bald eagles over the Snake River"
+    ],
+    "movies": [
+      "🎬 Grand Teton / Jackson Hole – Django Unchained, Spencer's Mountain, The Big Trail",
+      "🎬 Mormon Row – endless Western & photography shoots"
+    ],
+    "dark": "⭐ Excellent – Bridger-Teton NF, Teton dark skies",
+    "pray": {
+      "fajr": "~5:15",
+      "dhuhr": "1:25",
+      "asr": "5:00",
+      "maghrib": "7:50",
+      "isha": "9:10",
+      "zone": "Jackson Hole (Mountain)"
+    },
+    "sleep": {
+      "spot": "Bridger-Teton National Forest dispersed (Hwy 191 N of Jackson)",
+      "type": "National Forest – FREE",
+      "notes": "Abundant pull-offs. Cool nights 45-55°F — sleeping bag essential."
+    },
+    "groceries": "Smith's or Albertsons, Idaho Falls (cheaper than Jackson)",
+    "fuel": "~$32",
+    "warn": null
+  },
+  {
+    "n": 17,
+    "date": "Sun Sep 7",
+    "from": "Jackson Hole, WY",
+    "to": "Jackson Hole (Wyoming Day)",
+    "miles": 70,
+    "drive": "In-area",
+    "tag": "🐎 Cowboy + Teton day",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Grand_Teton_National_Park%2C_Wyoming_%2842892080574%29.jpg",
+    "stops": [
+      "Oxbow Bend sunrise – moose & elk in the mist, Grand Teton reflection",
+      "Menor's Ferry historic district – old west homestead",
+      "Horseback trail ride in Grand Teton (book a ranch outfitter ~$70-120) — your cowboy fix",
+      "Jackson rodeo (runs Wed & Sat summer nights, ~$25)"
+    ],
+    "wildlife": [
+      "Oxbow Bend sunrise – moose, river otters, beavers",
+      "Elk herds in the valley",
+      "Trumpeter swans, ospreys"
+    ],
+    "movies": [
+      "🎬 Grand Teton vistas – Shane (1953 classic Western), The Mountain Men"
+    ],
+    "dark": "⭐ Excellent – Bridger-Teton NF",
+    "pray": {
+      "fajr": "~5:20",
+      "dhuhr": "1:25",
+      "asr": "5:00",
+      "maghrib": "7:50",
+      "isha": "9:10",
+      "zone": "Jackson Hole (Mountain)"
+    },
+    "sleep": {
+      "spot": "Bridger-Teton NF dispersed OR Gros Ventre Campground ($35, in GTNP)",
+      "type": "National Forest FREE / NPS $35",
+      "notes": "Gros Ventre has stunning Teton views from camp."
+    },
+    "groceries": "Smith's Jackson (buy minimum — expensive)",
+    "fuel": "~$8",
+    "warn": null
+  },
+  {
+    "n": 18,
+    "date": "Mon Sep 8",
+    "from": "Jackson Hole, WY",
+    "to": "Yellowstone NP",
+    "miles": 130,
+    "drive": "2.5h + full day",
+    "tag": "🌋 Yellowstone",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Aerial_image_of_Grand_Prismatic_Spring_%28view_from_the_south%29.jpg",
+    "stops": [
+      "Old Faithful – erupts every ~90 min",
+      "Grand Prismatic Spring – Fairy Falls trail 0.5mi for the aerial view",
+      "Lamar Valley at dusk – bison herds, wolves, the 'Yellowstone series' country",
+      "Hayden Valley wildlife"
+    ],
+    "wildlife": [
+      "Lamar Valley – bison herds, wolves, grizzly & black bears ('America's Serengeti')",
+      "Hayden Valley – bison, elk, coyotes",
+      "Bald eagles, bighorn sheep, possible river otters"
+    ],
+    "movies": [
+      "🎬 Yellowstone region – inspiration & backdrop for the 'Yellowstone' TV universe (mostly filmed in Montana/Utah, but this is the real thing)"
+    ],
+    "dark": "Very good – Gallatin/Madison, mountain darkness",
+    "pray": {
+      "fajr": "~5:20",
+      "dhuhr": "1:25",
+      "asr": "4:55",
+      "maghrib": "7:45",
+      "isha": "9:05",
+      "zone": "Yellowstone (Mountain)"
+    },
+    "sleep": {
+      "spot": "Madison Campground ($30) OR Gallatin NF near Gardiner MT (FREE)",
+      "type": "NPS $30 / National Forest FREE",
+      "notes": "Book Madison at recreation.gov early. Gallatin NF outside north entrance is free."
+    },
+    "groceries": "Stock fully in Jackson — last real grocery store",
+    "fuel": "~$14",
+    "warn": "⚠️ Book Yellowstone campground at recreation.gov ASAP — fills months ahead."
+  },
+  {
+    "n": 19,
+    "date": "Tue Sep 9",
+    "from": "Yellowstone NP",
+    "to": "Cody, WY",
+    "miles": 120,
+    "drive": "2.5h + park morning",
+    "tag": "🤠 Real cowboy town",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/8/85/The_Scout_by_Gertrude_Vanderbilt_Whitney.jpg",
+    "stops": [
+      "Mammoth Hot Springs terraces – morning light",
+      "Yellowstone Lower Falls + Grand Canyon of Yellowstone",
+      "Drive the dramatic East Entrance (Buffalo Bill Scenic Byway)",
+      "Cody WY – founded by Buffalo Bill; Cody Nite Rodeo runs nightly in summer (~$25) 🐎"
+    ],
+    "wildlife": [
+      "Bighorn sheep on the East Entrance cliffs",
+      "Bison & elk in northern Yellowstone",
+      "Mule deer around Cody"
+    ],
+    "movies": [
+      "🎬 Cody – Buffalo Bill country, spiritual home of the Western genre",
+      "🎬 Shoshone Canyon – rugged Western film scenery"
+    ],
+    "dark": "Excellent – Shoshone NF near Cody",
+    "pray": {
+      "fajr": "~5:20",
+      "dhuhr": "1:25",
+      "asr": "4:55",
+      "maghrib": "7:45",
+      "isha": "9:05",
+      "zone": "Cody (Mountain)"
+    },
+    "sleep": {
+      "spot": "Buffalo Bill State Park or Shoshone NF dispersed, near Cody",
+      "type": "State Park $20 / NF FREE",
+      "notes": "Shoshone National Forest (first NF in the USA) west of Cody is free and beautiful."
+    },
+    "groceries": "Walmart, Cody",
+    "fuel": "~$13",
+    "warn": "⚠️ Cody Nite Rodeo is the highlight for a cowboy fan — runs every night June–Aug. Check Sept schedule."
+  },
+  {
+    "n": 20,
+    "date": "Wed Sep 10",
+    "from": "Cody, WY",
+    "to": "Rapid City, SD (Badlands)",
+    "miles": 430,
+    "drive": "6.5h",
+    "tag": "Wild West plains",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Columnar-jointed_porphyritic_phonolite_%28Eocene%2C_49_Ma%3B_Devils_Tower%2C_Wyoming%2C_USA%29_48.jpg",
+    "stops": [
+      "Bighorn Mountains scenic drive (Hwy 14) – dramatic mountain pass",
+      "Devils Tower National Monument – ATB covers it, first US national monument, sacred & stunning",
+      "Badlands NP at golden hour – ATB covers entry, surreal eroded spires",
+      "Wall Drug, Wall SD – classic Americana"
+    ],
+    "wildlife": [
+      "Devils Tower – prairie dog town at the base (huge colony, very active)",
+      "Pronghorn across the Wyoming plains",
+      "Badlands – bighorn sheep, bison, prairie dogs"
+    ],
+    "movies": [
+      "🎬 Devils Tower – Close Encounters of the Third Kind (the iconic mountain!)",
+      "🎬 Badlands – Dances with Wolves region, Armageddon, Starship Troopers"
+    ],
+    "dark": "⭐ WORLD-CLASS – Badlands NF, one of darkest skies in USA",
+    "pray": {
+      "fajr": "~5:10",
+      "dhuhr": "1:15",
+      "asr": "4:45",
+      "maghrib": "7:35",
+      "isha": "8:55",
+      "zone": "Badlands (Mountain)"
+    },
+    "sleep": {
+      "spot": "Badlands NP dispersed (wilderness zone) OR Buffalo Gap National Grassland",
+      "type": "NPS / Grassland – FREE",
+      "notes": "Free dispersed camping. Bison wander through. Incredible dark-sky stars."
+    },
+    "groceries": "Walmart, Rapid City SD",
+    "fuel": "~$47",
+    "warn": null
+  },
+  {
+    "n": 21,
+    "date": "Thu Sep 11",
+    "from": "Rapid City, SD",
+    "to": "Des Moines / Iowa City, IA",
+    "miles": 570,
+    "drive": "8h",
+    "tag": "Heading home",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/8/87/Mount_Rushmore_detail_view_%28100MP%29.jpg",
+    "stops": [
+      "Mount Rushmore at sunrise – $15 parking, ATB covers monument, no crowds",
+      "🦬 Custer State Park Wildlife Loop Rd – 18-mile loop, best guaranteed bison herds + wild burros of the whole trip ($20/vehicle, worth it)",
+      "Corn Palace Mitchell SD – world's only, 10 min",
+      "Stop in Iowa City or Des Moines"
+    ],
+    "wildlife": [
+      "Mount Rushmore area – mountain goats, bighorn sheep",
+      "Custer State Park (nearby) – free-roaming bison herds",
+      "Wild burros that approach cars in Custer"
+    ],
+    "movies": [
+      "🎬 Mount Rushmore – North by Northwest (Hitchcock), National Treasure 2"
+    ],
+    "dark": null,
+    "pray": {
+      "fajr": "~5:25",
+      "dhuhr": "1:25",
+      "asr": "4:55",
+      "maghrib": "7:40",
+      "isha": "9:00",
+      "zone": "Rapid City (Mountain)"
+    },
+    "sleep": {
+      "spot": "Walmart or casino lot, Des Moines/Iowa City area",
+      "type": "Walmart / Casino – FREE",
+      "notes": "Last car-camp night. Easy 4h to Chicago tomorrow."
+    },
+    "groceries": "Walmart, Mitchell or Sioux Falls SD",
+    "fuel": "~$63",
+    "warn": "⚠️ Long day, but splits the return into two manageable drives instead of one brutal 12h."
+  },
+  {
+    "n": 22,
+    "date": "Fri Sep 12",
+    "from": "Iowa, IA",
+    "to": "Chicago, IL 🏁",
+    "miles": 300,
+    "drive": "4.5h",
+    "tag": "🏁 Back to your uncle",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Chicago_River_ferry_b.jpg",
+    "stops": [
+      "Easy morning drive east on I-80",
+      "Cross the Mississippi at the Quad Cities",
+      "Arrive Chicago early afternoon — return the Mustang",
+      "Rest with your uncle before Sep 13 flight to Paris ✈️"
+    ],
+    "wildlife": null,
+    "movies": null,
+    "dark": null,
+    "pray": {
+      "fajr": "~5:30",
+      "dhuhr": "12:35",
+      "asr": "4:05",
+      "maghrib": "6:50",
+      "isha": "8:05",
+      "zone": "Chicago (Central)"
+    },
+    "sleep": {
+      "spot": "Uncle's home, Chicago 🎉",
+      "type": "Trip complete",
+      "notes": "22 days, ~6,400 miles. From Route 66 to Yellowstone and back. Mabrouk!"
+    },
+    "groceries": "—",
+    "fuel": "~$33",
+    "warn": null
+  }
+]

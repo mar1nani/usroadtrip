@@ -1,0 +1,53 @@
+{
+  "lists": [
+    {
+      "id": "list-vetements",
+      "name": "Vêtements",
+      "items": [
+        { "id": "cloth-tshirts", "name": "T-shirts", "checked": false },
+        { "id": "cloth-pantalons", "name": "Pantalons", "checked": false },
+        { "id": "cloth-veste", "name": "Veste chaude", "checked": false },
+        { "id": "cloth-maillot", "name": "Maillot de bain", "checked": false },
+        { "id": "cloth-chaussures", "name": "Chaussures de marche", "checked": false },
+        { "id": "cloth-chaussettes", "name": "Chaussettes", "checked": false },
+        { "id": "cloth-sousvetements", "name": "Sous-vêtements", "checked": false },
+        { "id": "cloth-pyjama", "name": "Pyjama", "checked": false }
+      ]
+    },
+    {
+      "id": "list-camping-gear",
+      "name": "Camping",
+      "items": [
+        { "id": "gear-sac-couchage", "name": "Sac de couchage", "checked": false },
+        { "id": "gear-oreiller", "name": "Oreiller gonflable", "checked": false },
+        { "id": "gear-lampe", "name": "Lampe frontale", "checked": false },
+        { "id": "gear-glaciere", "name": "Glacière", "checked": false },
+        { "id": "gear-chaise", "name": "Chaise pliante", "checked": false },
+        { "id": "gear-table", "name": "Table de camp", "checked": false }
+      ]
+    },
+    {
+      "id": "list-electronique",
+      "name": "Électronique",
+      "items": [
+        { "id": "elec-chargeurs", "name": "Chargeurs", "checked": false },
+        { "id": "elec-cables", "name": "Câbles", "checked": false },
+        { "id": "elec-powerbank", "name": "Powerbank", "checked": false },
+        { "id": "elec-adaptateur", "name": "Adaptateur prise US", "checked": false },
+        { "id": "elec-appareil-photo", "name": "Appareil photo", "checked": false },
+        { "id": "elec-support-tel", "name": "Support téléphone / GPS", "checked": false }
+      ]
+    },
+    {
+      "id": "list-documents-depart",
+      "name": "Documents",
+      "items": [
+        { "id": "doc-passeport", "name": "Passeport", "checked": false },
+        { "id": "doc-permis", "name": "Permis de conduire", "checked": false },
+        { "id": "doc-esta", "name": "ESTA imprimé", "checked": false },
+        { "id": "doc-assurance", "name": "Assurance voyage", "checked": false },
+        { "id": "doc-carte", "name": "Carte de crédit", "checked": false }
+      ]
+    }
+  ]
+}

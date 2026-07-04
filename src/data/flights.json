@@ -1,0 +1,38 @@
+{
+  "outbound": {
+    "flightNumber": "AA151",
+    "displayDate": "Wed 19 Aug 2026",
+    "departure": {
+      "airportCode": "CDG",
+      "airportName": "Paris Charles de Gaulle",
+      "time": "14:40",
+      "utc": "2026-08-19T12:40:00Z"
+    },
+    "arrival": {
+      "airportCode": "ORD",
+      "airportName": "Chicago O'Hare",
+      "time": "16:50",
+      "utc": "2026-08-19T21:50:00Z"
+    },
+    "class": "Economy (B)",
+    "meals": ["Lunch", "Snack"]
+  },
+  "return": {
+    "flightNumber": "AA150",
+    "displayDate": "Sun 13 Sep 2026",
+    "departure": {
+      "airportCode": "ORD",
+      "airportName": "Chicago O'Hare",
+      "time": "21:40",
+      "utc": "2026-09-14T02:40:00Z"
+    },
+    "arrival": {
+      "airportCode": "CDG",
+      "airportName": "Paris Charles de Gaulle",
+      "time": "12:40",
+      "utc": "2026-09-14T10:40:00Z"
+    },
+    "class": "Economy (B)",
+    "meals": ["Dinner", "Breakfast"]
+  }
+}

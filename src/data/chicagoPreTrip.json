@@ -1,0 +1,54 @@
+[
+  {
+    "day": 0,
+    "date": "Wed Aug 19",
+    "title": "Arrivée à Chicago",
+    "stops": [
+      { "id": "chi0-1", "name": "Arrivée O'Hare + transfert", "time": "16:50", "duration": "1h", "note": "Vol AA151, récupération des bagages et transfert en ville" },
+      { "id": "chi0-2", "name": "Installation chez l'oncle", "time": "18:00", "duration": "1h", "note": "Dépose des affaires, douche, décompression après le vol" },
+      { "id": "chi0-3", "name": "Dîner de retrouvailles en famille", "time": "19:30", "duration": "1h30", "note": "Premier repas en famille avant le début du séjour" },
+      { "id": "chi0-4", "name": "Repos, décalage horaire", "time": "21:30", "duration": "—", "note": "Nuit tranquille, 7h de décalage avec la France" }
+    ],
+    "sleep": { "spot": "Chez l'oncle, Chicago", "type": "Famille", "notes": "Retrouvailles et acclimatation avant les 2 jours de visite de Chicago." }
+  },
+  {
+    "day": 1,
+    "date": "Thu Aug 20",
+    "title": "Downtown Chicago & the Loop",
+    "stops": [
+      { "id": "chi1-1", "name": "Millennium Park", "time": "10:00", "duration": "1h", "note": "Point de départ, parc central du Loop" },
+      { "id": "chi1-2", "name": "Cloud Gate (The Bean)", "time": "11:00", "duration": "30 min", "note": "Photo incontournable, juste à côté" },
+      { "id": "chi1-3", "name": "Art Institute of Chicago", "time": "12:00", "duration": "2h30", "note": "L'un des meilleurs musées d'art des USA" },
+      { "id": "chi1-4", "name": "Riverwalk", "time": "15:30", "duration": "1h30", "note": "Balade à pied le long de la rivière Chicago" },
+      { "id": "chi1-5", "name": "Coucher de soleil sur le Loop", "time": "19:00", "duration": "1h", "note": "Vue depuis le Riverwalk ou un rooftop bar" }
+    ],
+    "movies": [
+      "🎬 Le Loop / Riverwalk — décors urbains qu'on retrouve dans Chicago P.D., Chicago Fire et Chicago Med (le \"One Chicago\" de NBC)",
+      "🎬 Lower Wacker Drive (à proximité) — la fameuse route souterraine à deux niveaux, utilisée dans d'innombrables scènes de poursuite tournées à Chicago",
+      "🎬 The Dark Knight (2008) — plusieurs scènes tournées dans le Loop"
+    ],
+    "sleep": { "spot": "Chez l'oncle, Chicago", "type": "Famille", "notes": "Retour chez l'oncle après la journée en ville, pas de camping ce soir." }
+  },
+  {
+    "day": 2,
+    "date": "Fri Aug 21",
+    "title": "Navy Pier & quartiers locaux",
+    "stops": [
+      { "id": "chi2-1", "name": "Navy Pier", "time": "10:00", "duration": "2h", "note": "Grande roue, vue sur le lac Michigan" },
+      { "id": "chi2-2", "name": "Lincoln Park", "time": "13:00", "duration": "1h30", "note": "Parc + zoo gratuit" },
+      { "id": "chi2-3", "name": "Chicago River Architecture Tour", "time": "15:00", "duration": "1h30", "note": "Croisière commentée, très recommandée" },
+      { "id": "chi2-4", "name": "Wicker Park", "time": "17:30", "duration": "2h", "note": "Quartier bohème, bars et restaurants locaux" },
+      { "id": "chi2-5", "name": "Soirée calme avant le départ", "time": "20:00", "duration": "—", "note": "Repos, préparation des bagages pour le 22 août" }
+    ],
+    "wildlife": [
+      "Lincoln Park Zoo – zoo gratuit en plein cœur de la ville : girafes, lions, singes",
+      "Pélicans et hérons sur le lac Michigan près de Navy Pier"
+    ],
+    "movies": [
+      "🎬 Cinespace Chicago Film Studios (West Side) — le vrai studio où sont tournés Chicago P.D., Chicago Fire et Chicago Med",
+      "🎬 Chicago River / DuSable Bridge — les vues qu'on reconnaît dans les génériques de Chicago P.D. et Chicago Fire",
+      "🎬 Wicker Park — le quartier qui a donné son nom au film Wicker Park (2004) avec Josh Hartnett"
+    ],
+    "sleep": { "spot": "Chez l'oncle, Chicago", "type": "Famille", "notes": "Dernière nuit avant le grand départ du Jour 1 (22 août)." }
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "lists": [
+    {
+      "id": "list-alimentation",
+      "name": "Alimentation",
+      "items": [
+        { "id": "food-eau", "name": "Eau", "checked": false },
+        { "id": "food-lait", "name": "Lait", "checked": false },
+        { "id": "food-pain", "name": "Pain", "checked": false },
+        { "id": "food-oeufs", "name": "Œufs", "checked": false },
+        { "id": "food-viande", "name": "Viande", "checked": false },
+        { "id": "food-fruits", "name": "Fruits", "checked": false },
+        { "id": "food-legumes", "name": "Légumes", "checked": false },
+        { "id": "food-glace", "name": "Glace", "checked": false },
+        { "id": "food-boissons", "name": "Boissons", "checked": false }
+      ]
+    },
+    {
+      "id": "list-camping",
+      "name": "Camping",
+      "items": [
+        { "id": "camp-gaz", "name": "Gaz", "checked": false },
+        { "id": "camp-piles", "name": "Piles", "checked": false },
+        { "id": "camp-allumefeu", "name": "Allume-feu", "checked": false },
+        { "id": "camp-charbon", "name": "Charbon", "checked": false },
+        { "id": "camp-corde", "name": "Corde", "checked": false }
+      ]
+    },
+    {
+      "id": "list-voiture",
+      "name": "Voiture",
+      "items": [
+        { "id": "car-huile", "name": "Huile", "checked": false },
+        { "id": "car-laveglace", "name": "Liquide lave-glace", "checked": false },
+        { "id": "car-chiffon", "name": "Chiffon", "checked": false },
+        { "id": "car-usb", "name": "Câble USB", "checked": false }
+      ]
+    },
+    {
+      "id": "list-randonnee",
+      "name": "Randonnée",
+      "items": [
+        { "id": "hike-creme", "name": "Crème solaire", "checked": false },
+        { "id": "hike-antimoustique", "name": "Spray anti-moustiques", "checked": false },
+        { "id": "hike-gourde", "name": "Gourde", "checked": false },
+        { "id": "hike-snacks", "name": "Snacks", "checked": false },
+        { "id": "hike-lampe", "name": "Lampe frontale", "checked": false }
+      ]
+    }
+  ]
+}

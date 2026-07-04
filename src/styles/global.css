@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #080d20;
+  background-image: radial-gradient(ellipse at 50% -10%, #14204a 0%, #0a1130 45%, #070b1c 100%);
+  color: #f4efe0;
+  font-family: "Helvetica Neue", system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+}
+.serif {
+  font-family: "Georgia", "Times New Roman", serif;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #111;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 3px;
+}
+button {
+  font-family: inherit;
+}
+button:focus {
+  outline: none;
+}
+img {
+  display: block;
+}
+.fadein {
+  animation: fade 0.35s ease;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+input,
+textarea {
+  font-family: inherit;
+}
+
+/* ---- App shell / navigation ---- */
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+}
+.app-sidebar {
+  width: 240px;
+  flex-shrink: 0;
+  background: #0e1838;
+  border-right: 1px solid #2a3c6e;
+}
+.app-main {
+  flex: 1;
+  min-width: 0;
+}
+.app-topbar-menu-btn {
+  display: none;
+  background: none;
+  border: 1px solid #2a3c6e;
+  color: #f4efe0;
+  border-radius: 8px;
+  width: 38px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+.app-overlay {
+  display: none;
+}
+@media (max-width: 899px) {
+  .app-sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    z-index: 50;
+    overflow-y: auto;
+  }
+  .app-sidebar.open {
+    transform: translateX(0);
+  }
+  .app-topbar-menu-btn {
+    display: inline-flex;
+  }
+  .app-overlay.open {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 40;
+  }
+}

@@ -1,0 +1,9 @@
+[
+  { "id": "doc-passeport", "name": "Passeport", "note": "", "checked": false },
+  { "id": "doc-esta", "name": "ESTA", "note": "", "checked": false },
+  { "id": "doc-permis", "name": "Permis de conduire", "note": "", "checked": false },
+  { "id": "doc-permis-intl", "name": "Permis international (optionnel)", "note": "", "checked": false },
+  { "id": "doc-assurance", "name": "Assurance voyage", "note": "", "checked": false },
+  { "id": "doc-billets", "name": "Réservation billets d'avion", "note": "", "checked": false },
+  { "id": "doc-voiture", "name": "Confirmation location voiture", "note": "", "checked": false }
+]

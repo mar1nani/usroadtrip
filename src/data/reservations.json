@@ -1,0 +1,72 @@
+[
+  {
+    "id": "res-yosemite-dayuse",
+    "category": "parc",
+    "name": "Yosemite – réservation d'entrée journée",
+    "date": "2026-09-03",
+    "time": "",
+    "city": "Yosemite Valley, CA",
+    "confirmation": "",
+    "link": "https://www.recreation.gov/timed-entry/10086745",
+    "phone": "",
+    "price": "",
+    "notes": "Fenêtre glissante de 7 jours, ouverture 8h. À réserver dès que possible avant le jour 13.",
+    "status": "a_reserver"
+  },
+  {
+    "id": "res-yellowstone-madison",
+    "category": "camping",
+    "name": "Camping Madison – Yellowstone",
+    "date": "2026-09-08",
+    "time": "",
+    "city": "Yellowstone NP, WY",
+    "confirmation": "",
+    "link": "https://www.recreation.gov",
+    "phone": "",
+    "price": "30",
+    "notes": "Se remplit des mois à l'avance, réserver en priorité.",
+    "status": "a_reserver"
+  },
+  {
+    "id": "res-kirkcreek",
+    "category": "camping",
+    "name": "Kirk Creek Campground – Big Sur",
+    "date": "2026-09-01",
+    "time": "",
+    "city": "Big Sur, CA",
+    "confirmation": "",
+    "link": "https://www.recreation.gov",
+    "phone": "",
+    "price": "25",
+    "notes": "Falaise au-dessus du Pacifique, réserver plusieurs semaines à l'avance.",
+    "status": "a_reserver"
+  },
+  {
+    "id": "res-leocarrillo",
+    "category": "camping",
+    "name": "Leo Carrillo State Beach",
+    "date": "2026-08-29",
+    "time": "",
+    "city": "Malibu, CA",
+    "confirmation": "",
+    "link": "https://www.reservecalifornia.com",
+    "phone": "",
+    "price": "35",
+    "notes": "Se remplit vite en été, couvre les nuits des jours 8 à 10.",
+    "status": "a_reserver"
+  },
+  {
+    "id": "res-grosventre",
+    "category": "camping",
+    "name": "Gros Ventre Campground – Grand Teton",
+    "date": "2026-09-07",
+    "time": "",
+    "city": "Jackson Hole, WY",
+    "confirmation": "",
+    "link": "https://www.recreation.gov",
+    "phone": "",
+    "price": "35",
+    "notes": "Alternative au camping dispersé gratuit si tu préfères un spot garanti avec vue sur les Tetons.",
+    "status": "a_reserver"
+  }
+]
