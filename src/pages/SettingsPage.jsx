@@ -88,7 +88,7 @@ export default function SettingsPage() {
       setResetStatus("sent");
     } catch (err) {
       console.warn("Échec de l'envoi de l'email de réinitialisation :", err);
-      setResetStatus("error");
+      setResetStatus(err?.status === 429 ? "rate-limited" : "error");
     }
   }
 
@@ -222,6 +222,9 @@ export default function SettingsPage() {
             </button>
             {resetStatus === "need-email" && <div style={{ fontSize: 12, color: C.red, marginTop: 6 }}>Renseigne d'abord ton email ci-dessus.</div>}
             {resetStatus === "sent" && <div style={{ fontSize: 12, color: "#3a8f5c", marginTop: 6 }}>✓ Email envoyé — clique le lien pour définir ton mot de passe.</div>}
+            {resetStatus === "rate-limited" && (
+              <div style={{ fontSize: 12, color: C.red, marginTop: 6 }}>Trop de tentatives — réessaie dans une minute.</div>
+            )}
             {resetStatus === "error" && <div style={{ fontSize: 12, color: C.red, marginTop: 6 }}>Erreur — Supabase est-il configuré ?</div>}
           </>
         )}
