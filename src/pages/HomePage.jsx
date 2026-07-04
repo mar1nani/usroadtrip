@@ -38,7 +38,7 @@ export default function HomePage() {
   const carPoint = useCarPosition();
   const { location, status: locationStatus } = useCurrentLocation();
   const { effectiveIndex: todayIdx, started, confirmDay } = useTripProgress();
-  const { role, scope } = usePermissions();
+  const { role, scope, canEdit } = usePermissions();
 
   useEffect(() => {
     loadDayProgress().then(setProgress);
@@ -162,8 +162,12 @@ export default function HomePage() {
             <RoleGuard allow={["marouane", "isabelle"]}>
               <FlightCard scope={scope} compact />
             </RoleGuard>
-            <CountdownCard effectiveIndex={todayIdx} flights={userFlights} compact />
-            <CurrentLocationCard location={location} status={locationStatus} />
+            <RoleGuard allow={["marouane", "isabelle"]}>
+              <CountdownCard effectiveIndex={todayIdx} flights={userFlights} compact />
+            </RoleGuard>
+            <RoleGuard allow={["marouane", "isabelle"]}>
+              <CurrentLocationCard location={location} status={locationStatus} />
+            </RoleGuard>
             <RoleGuard allow={["marouane", "isabelle"]}>
               <div style={{ background: C.card, border: `1px solid ${C.gold}`, borderRadius: 12, padding: "12px 14px" }}>
                 <div style={{ fontSize: 10, color: C.dim, textTransform: "uppercase", letterSpacing: 1.5, fontWeight: 700, marginBottom: 4 }}>
@@ -239,8 +243,12 @@ export default function HomePage() {
           ) : (
             <button
               onClick={() => {
-                confirmDay(0);
-                navigate("/days/1");
+                if (canEdit) {
+                  confirmDay(0);
+                  navigate("/days/1");
+                } else {
+                  navigate("/chicago");
+                }
               }}
               style={{
                 width: "100%",
@@ -260,9 +268,11 @@ export default function HomePage() {
               <div style={{ fontSize: 11, textTransform: "uppercase", letterSpacing: 2, opacity: 0.7, fontWeight: 700 }}>
                 Actuellement à Chicago (pré-roadtrip)
               </div>
-              <div style={{ fontSize: 20, fontWeight: 800, marginTop: 4 }}>🚀 Je démarre mon trip</div>
+              <div style={{ fontSize: 20, fontWeight: 800, marginTop: 4 }}>
+                {canEdit ? "🚀 Je démarre mon trip" : "🏙️ Pré-roadtrip Chicago"}
+              </div>
               <div style={{ fontSize: 14, marginTop: 3, opacity: 0.85 }}>
-                Confirme quand tu quittes Chicago pour St. Louis (Jour 1) →
+                {canEdit ? "Confirme quand tu quittes Chicago pour St. Louis (Jour 1) →" : "Voir le programme →"}
               </div>
             </button>
           )}

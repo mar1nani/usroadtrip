@@ -14,6 +14,7 @@ export function usePermissions() {
     canSeeReservations: !isGuest,
     canSeeFlights: !isGuest,
     canSeeSettings: !isGuest,
+    canSeeDocuments: !isGuest,
     canEdit: !isGuest,
   };
 }

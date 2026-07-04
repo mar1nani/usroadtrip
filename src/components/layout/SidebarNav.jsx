@@ -1,8 +1,23 @@
 import { NavLink } from "react-router-dom";
 import { C } from "../../styles/theme";
 import { clearAll } from "../../services/offline/localCache";
+import { usePermissions } from "../../hooks/usePermissions";
 
-const NAV_ITEMS = [
+// Étapes de voyage, lieux, photos : visible par tout le monde, y compris un
+// invité qui n'a que le lien de partage — rien de personnel ni de financier.
+const NAV_ITEMS_GUEST = [
+  { to: "/", label: "Accueil", icon: "🏠", end: true },
+  { to: "/chicago", label: "Chicago (pré-trip)", icon: "🏙️" },
+  { to: "/days", label: "Journées", icon: "📅" },
+  { to: "/shopping", label: "Courses", icon: "🛒" },
+  { to: "/converter", label: "Convertisseur", icon: "🔄" },
+  { to: "/gallery", label: "Galerie", icon: "📸" },
+  { to: "/checklist", label: "Checklist départ", icon: "✅" },
+  { to: "/settings", label: "Se connecter", icon: "🔑" },
+];
+
+// Marouane/Isabelle : accès complet (budget, réservations, documents, vol...).
+const NAV_ITEMS_FULL = [
   { to: "/", label: "Accueil", icon: "🏠", end: true },
   { to: "/chicago", label: "Chicago (pré-trip)", icon: "🏙️" },
   { to: "/days", label: "Journées", icon: "📅" },
@@ -18,6 +33,10 @@ const NAV_ITEMS = [
 ];
 
 export default function SidebarNav({ onNavigate }) {
+  const { role } = usePermissions();
+  const isGuest = role === "guest";
+  const items = isGuest ? NAV_ITEMS_GUEST : NAV_ITEMS_FULL;
+
   async function handleReset() {
     if (!confirm("Réinitialiser toutes les données locales (progression, réservations, courses, checklist, documents, réglages) ? Cette action est irréversible.")) return;
     await clearAll();
@@ -38,7 +57,7 @@ export default function SidebarNav({ onNavigate }) {
       >
         ★ Road Trip USA
       </div>
-      {NAV_ITEMS.map((item) => (
+      {items.map((item) => (
         <NavLink
           key={item.to}
           to={item.to}
@@ -62,27 +81,31 @@ export default function SidebarNav({ onNavigate }) {
         </NavLink>
       ))}
 
-      <div style={{ height: 1, background: C.line, margin: "10px 4px" }} />
-      <button
-        onClick={handleReset}
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: 10,
-          padding: "10px 12px",
-          borderRadius: 9,
-          fontSize: 13.5,
-          fontWeight: 500,
-          color: C.red,
-          background: "transparent",
-          border: "none",
-          textAlign: "left",
-          cursor: "pointer",
-        }}
-      >
-        <span style={{ fontSize: 16 }}>🗑️</span>
-        Tout réinitialiser
-      </button>
+      {!isGuest && (
+        <>
+          <div style={{ height: 1, background: C.line, margin: "10px 4px" }} />
+          <button
+            onClick={handleReset}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: 10,
+              padding: "10px 12px",
+              borderRadius: 9,
+              fontSize: 13.5,
+              fontWeight: 500,
+              color: C.red,
+              background: "transparent",
+              border: "none",
+              textAlign: "left",
+              cursor: "pointer",
+            }}
+          >
+            <span style={{ fontSize: 16 }}>🗑️</span>
+            Tout réinitialiser
+          </button>
+        </>
+      )}
     </nav>
   );
 }

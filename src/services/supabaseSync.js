@@ -2,7 +2,17 @@ import { supabase } from "./supabase/client";
 import { getCurrentUser } from "./supabase/auth";
 import { getCached, getCachedUpdatedAt, setCachedWithTimestamp } from "./offline/localCache";
 
-const DOMAINS = ["day_progress", "reservations", "shopping", "settings"];
+const DOMAINS = [
+  "day_progress",
+  "chicago_progress",
+  "reservations",
+  "shopping",
+  "checklist",
+  "documents",
+  "flights",
+  "trip_expenses",
+  "settings",
+];
 
 export async function pullAll(userId) {
   for (const domain of DOMAINS) {

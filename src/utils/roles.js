@@ -3,10 +3,13 @@ const ROLE_EMAILS = {
   "sureau.isabelle1@gmail.com": "isabelle",
 };
 
-// Non connecté (ou Supabase pas encore configuré) = comportement actuel de
-// l'app, pas un mode invité verrouillé — voir le plan pour le raisonnement.
+// Non connecté (ou email non reconnu) = invité, accès restreint. Seuls les
+// deux emails ci-dessus donnent accès complet — l'authentification Supabase
+// étant maintenant active en production, on ne peut plus se permettre de
+// retomber sur "marouane" par défaut (ça exposait ses données à qui ouvrait
+// le lien sans être connecté).
 export function roleForUser(user) {
-  if (!user) return "marouane";
+  if (!user) return "guest";
   const email = user.email?.toLowerCase();
   return ROLE_EMAILS[email] || "guest";
 }

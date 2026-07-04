@@ -4,15 +4,19 @@ import Card from "../components/ui/Card";
 import EmptyState from "../components/ui/EmptyState";
 import LoadingState from "../components/ui/LoadingState";
 import { loadDocuments, addDocument, updateDocument, deleteDocument } from "../services/documentsService";
+import { usePermissions } from "../hooks/usePermissions";
+import RestrictedNotice from "../components/auth/RestrictedNotice";
 
 export default function DocumentsPage() {
   const [documents, setDocuments] = useState(null);
   const [newName, setNewName] = useState("");
+  const { canSeeDocuments } = usePermissions();
 
   useEffect(() => {
     loadDocuments().then(setDocuments);
   }, []);
 
+  if (!canSeeDocuments) return <RestrictedNotice />;
   if (!documents) return <LoadingState />;
 
   const doneCount = documents.filter((d) => d.checked).length;

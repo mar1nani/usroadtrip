@@ -5,6 +5,7 @@ import Card from "../components/ui/Card";
 import LoadingState from "../components/ui/LoadingState";
 import MetricHint from "../components/ui/MetricHint";
 import { useTripProgress } from "../hooks/useTripProgress";
+import RoleGuard from "../components/auth/RoleGuard";
 import { countTotalStops, countDoneStops, countDaysStarted } from "../utils/progress";
 import { computeSpendByCat, computeSpendTotal, BUDGET_PLAN, ALL_SPEND_DAYS } from "../utils/spend";
 import { loadDayProgress } from "../services/dayProgressService";
@@ -63,11 +64,13 @@ export default function StatisticsPage() {
           }
           sub={`sur ${totalDistance.toLocaleString()} mi au total`}
         />
-        <StatCard
-          label="Dépenses"
-          value={`$${Math.round(spendTotal).toLocaleString()}`}
-          sub={`sur ~$${BUDGET_PLAN.toLocaleString()} prévus`}
-        />
+        <RoleGuard allow={["marouane", "isabelle"]}>
+          <StatCard
+            label="Dépenses"
+            value={`$${Math.round(spendTotal).toLocaleString()}`}
+            sub={`sur ~$${BUDGET_PLAN.toLocaleString()} prévus`}
+          />
+        </RoleGuard>
         <StatCard
           label="Note moyenne"
           value={avgRating ? `${avgRating} ★` : "—"}
