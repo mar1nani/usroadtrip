@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import statesData from "../../data/states.json";
 import { pathBoundingBox } from "../../utils/geometry";
+import { useIsMobile } from "../../hooks/useIsMobile";
 import CarIcon from "./CarIcon";
 
 const STATES = statesData;
@@ -37,6 +38,7 @@ export default function TripMap({ points, idx, onPick, carPoint, selectedStateAb
   const hp = hover != null ? seq[hover] : null;
 
   const { tx, ty, scale } = useMemo(() => computeZoomTransform(selectedStateAb), [selectedStateAb]);
+  const isMobile = useIsMobile();
 
   return (
     <div
@@ -64,8 +66,12 @@ export default function TripMap({ points, idx, onPick, carPoint, selectedStateAb
       >
         ★ Mon parcours
       </div>
-      <div style={{ position: "relative" }}>
-        <svg viewBox="0 0 900 560" style={{ width: "100%", display: "block", borderRadius: 8, overflow: "hidden" }}>
+      <div style={{ position: "relative", ...(isMobile ? { aspectRatio: "4 / 3", overflow: "hidden", borderRadius: 8 } : {}) }}>
+        <svg
+          viewBox="0 0 900 560"
+          preserveAspectRatio={isMobile ? "xMidYMid slice" : "xMidYMid meet"}
+          style={{ width: "100%", height: isMobile ? "100%" : "auto", display: "block", borderRadius: 8, overflow: "hidden" }}
+        >
           <defs>
             <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0" stopColor="#0c1738" />
@@ -128,7 +134,7 @@ export default function TripMap({ points, idx, onPick, carPoint, selectedStateAb
                 x={st.cx}
                 y={st.cy}
                 textAnchor="middle"
-                fontSize="14"
+                fontSize="18"
                 fontWeight="800"
                 fill={hp && hp.st === st.ab ? "#fff8e0" : "#3a2c08"}
                 style={{ pointerEvents: "none" }}
@@ -155,12 +161,12 @@ export default function TripMap({ points, idx, onPick, carPoint, selectedStateAb
               filter="url(#goldGlow)"
             />
             <g>
-              <circle cx={CHI.x} cy={CHI.y} r="7" fill="#f0d066" stroke="#0a1130" strokeWidth="2" />
+              <circle cx={CHI.x} cy={CHI.y} r="8.5" fill="#f0d066" stroke="#0a1130" strokeWidth="2.5" />
               <text
                 x={CHI.x}
-                y={CHI.y - 11}
+                y={CHI.y - 13}
                 textAnchor="middle"
-                fontSize="11"
+                fontSize="13"
                 fontWeight="700"
                 fill="#f0d066"
                 style={{ pointerEvents: "none" }}
@@ -196,17 +202,17 @@ export default function TripMap({ points, idx, onPick, carPoint, selectedStateAb
                   <circle
                     cx={p.x}
                     cy={p.y}
-                    r={isHover ? 11 : isNextStop ? 10 : visited ? 9 : 7}
+                    r={isHover ? 13 : isNextStop ? 12 : visited ? 11 : 8.5}
                     fill={isNextStop ? "#2e8cff" : visited ? "#16305f" : "#101a3a"}
                     stroke={isHover ? "#f0d066" : isNextStop ? "#bfe0ff" : visited ? "#d4af37" : "#4a5a88"}
-                    strokeWidth={isHover ? 3 : isNextStop ? 2.5 : 2.5}
+                    strokeWidth={isHover ? 3.5 : isNextStop ? 3 : 3}
                   />
                   {visited && (
                     <text
                       x={p.x}
-                      y={p.y + 4.6}
+                      y={p.y + 5.5}
                       textAnchor="middle"
-                      fontSize="13"
+                      fontSize="16"
                       fontWeight="800"
                       fill="#f0d066"
                       style={{ pointerEvents: "none" }}

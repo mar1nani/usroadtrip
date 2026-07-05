@@ -15,6 +15,7 @@ import { useCarPosition } from "../hooks/useCarPosition";
 import { useCurrentLocation } from "../hooks/useCurrentLocation";
 import { useTripProgress } from "../hooks/useTripProgress";
 import { usePermissions } from "../hooks/usePermissions";
+import { useIsMobile } from "../hooks/useIsMobile";
 import RoleGuard from "../components/auth/RoleGuard";
 import WavingFlag from "../components/trip/WavingFlag";
 import FlightCard from "../components/trip/FlightCard";
@@ -39,6 +40,7 @@ export default function HomePage() {
   const { location, status: locationStatus } = useCurrentLocation();
   const { effectiveIndex: todayIdx, started, confirmDay } = useTripProgress();
   const { role, scope, canEdit } = usePermissions();
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     loadDayProgress().then(setProgress);
@@ -157,6 +159,12 @@ export default function HomePage() {
 
       <div style={{ maxWidth: 1900, margin: "0 auto", padding: "18px 20px 0" }}>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 16, marginBottom: 16, alignItems: "flex-start" }}>
+          {isMobile && (
+            <div style={{ flex: "1 1 100%", minWidth: 0 }}>
+              <InteractiveTripMap points={MAP_PTS} idx={todayIdx} onPick={goToDay} carPoint={carPoint} />
+            </div>
+          )}
+
           <div style={{ flex: "0 1 320px", minWidth: 260, display: "grid", gap: 12 }}>
             <NextStopCard idx={todayIdx} />
             <RoleGuard allow={["marouane", "isabelle"]}>
@@ -179,9 +187,11 @@ export default function HomePage() {
             </RoleGuard>
           </div>
 
-          <div style={{ flex: "1 1 480px", minWidth: 320 }}>
-            <InteractiveTripMap points={MAP_PTS} idx={todayIdx} onPick={goToDay} carPoint={carPoint} />
-          </div>
+          {!isMobile && (
+            <div style={{ flex: "1 1 480px", minWidth: 320 }}>
+              <InteractiveTripMap points={MAP_PTS} idx={todayIdx} onPick={goToDay} carPoint={carPoint} />
+            </div>
+          )}
         </div>
       </div>
 
